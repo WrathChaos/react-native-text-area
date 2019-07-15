@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { View, Text, TextInput } from "react-native";
-import styles from "./TextArea.style";
+import styles, { charCountStyle } from "./TextArea.style";
 
 export default class TextArea extends Component {
   constructor(props) {
@@ -19,19 +19,22 @@ export default class TextArea extends Component {
   };
 
   renderCharCount() {
-    const { maxCharLength } = this.props;
+    const { maxCharLength, charCountColor, exceedCharCountColor } = this.props;
     const { charCount } = this.state;
 
     if (!maxCharLength) return null;
+
     return (
       <Text
-        style={styles.charCountStyle}
+        style={charCountStyle(
+          charCount > maxCharLength ? exceedCharCountColor : charCountColor
+        )}
       >{`${charCount}/${maxCharLength}`}</Text>
     );
   }
 
   render() {
-    const { maxCharLength, ...rest } = this.props;
+    const { maxCharLength, charCountColor, ...rest } = this.props;
     if (!!maxCharLength) {
       rest.maxCharLength = maxCharLength;
     }
@@ -50,11 +53,15 @@ export default class TextArea extends Component {
 }
 
 TextArea.propTypes = {
-  count: PropTypes.number,
-  maxCharLength: PropTypes.number
+  charCount: PropTypes.number,
+  maxCharLength: PropTypes.number,
+  charCountColor: PropTypes.string,
+  exceedCharCountColor: PropTypes.string
 };
 
 TextArea.defaultProps = {
-  count: 0,
-  maxCharLength: 200
+  charCount: 0,
+  maxCharLength: 200,
+  charCountColor: "#ccc",
+  exceedCharCountColor: "red"
 };
