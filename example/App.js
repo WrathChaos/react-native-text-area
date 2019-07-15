@@ -24,10 +24,10 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <TextArea
-          maxCharLength={50}
-          exceedCharCountColor="pink"
+          maxCharLimit={50}
+          placeholderTextColor="black"
+          exceedCharCountColor="#990606"
           placeholder={"Write your review..."}
-          placeholderTextColor={"black"}
         />
       </SafeAreaView>
     </Fragment>

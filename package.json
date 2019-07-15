@@ -1,14 +1,14 @@
 {
-  "name": "react-native-review-modal",
+  "name": "react-native-text-area",
   "version": "0.0.1",
-  "description": "Review Modal for rating purpose just for React Native",
+  "description": "Simple and easy to use TextArea for React Native",
   "keywords": [
     "ios",
     "android",
-    "modal",
-    "review",
-    "review-modal",
-    "rating",
+    "text",
+    "text-area",
+    "textArea",
+    "text-input",
     "ui-kit",
     "FreakyCoder",
     "freakycoder",
@@ -21,14 +21,13 @@
     "rn"
   ],
   "homepage": "https://www.freakycoder.com",
-  "bugs": "https://github.com/WrathChaos/react-native-text-loading/issues",
-  "main": "./lib/src/Loading.js",
-  "repository": "git@github.com:WrathChaos/react-native-text-loading.git",
+  "bugs": "https://github.com/WrathChaos/react-native-text-area/issues",
+  "main": "./lib/src/TextArea.js",
+  "repository": "git@github.com:WrathChaos/react-native-text-area.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "react": ">= 16.x.x",
-    "react-native": ">= 0.55.x",
-    "react-native-spinkit": ">= 1.3.0"
+    "react-native": ">= 0.55.x"
   }
 }
