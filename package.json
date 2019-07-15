@@ -1,0 +1,34 @@
+{
+  "name": "react-native-review-modal",
+  "version": "0.0.1",
+  "description": "Review Modal for rating purpose just for React Native",
+  "keywords": [
+    "ios",
+    "android",
+    "modal",
+    "review",
+    "review-modal",
+    "rating",
+    "ui-kit",
+    "FreakyCoder",
+    "freakycoder",
+    "kuray",
+    "Kuray",
+    "react",
+    "react-native",
+    "javascript",
+    "ui-lib",
+    "rn"
+  ],
+  "homepage": "https://www.freakycoder.com",
+  "bugs": "https://github.com/WrathChaos/react-native-text-loading/issues",
+  "main": "./lib/src/Loading.js",
+  "repository": "git@github.com:WrathChaos/react-native-text-loading.git",
+  "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">= 16.x.x",
+    "react-native": ">= 0.55.x",
+    "react-native-spinkit": ">= 1.3.0"
+  }
+}
