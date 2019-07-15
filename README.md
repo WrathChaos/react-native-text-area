@@ -19,15 +19,15 @@ Add the dependency:
 
 ### React Native:
 
-```ruby
-npm i react-native-text-area
+```js
+npm i @freakycoder/react-native-text-area
 ```
 
 ## Peer Dependencies
 
 ###### IMPORTANT! You need install them.
 
-```
+```js
 "react": ">= 16.x.x",
 "react-native": ">= 0.55.x",
 ```

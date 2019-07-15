@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { SafeAreaView } from "react-native";
 
-import TextArea from "react-native-text-area";
+import TextArea from "@freakycoder/react-native-text-area";
 
 const App = () => {
   return (
