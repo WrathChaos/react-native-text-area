@@ -1,6 +1,6 @@
 {
   "name": "@freakycoder/react-native-text-area",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "Simple and easy to use TextArea for React Native",
   "keywords": [
     "ios",

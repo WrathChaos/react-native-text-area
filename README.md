@@ -47,13 +47,14 @@ import TextArea from "react-native-text-area";
 
 ## Configuration - Props
  
-| Property             |  Type  |  Default  | Description                               |
-| -------------------- | :----: | :-------: | ----------------------------------------- |
-| backgroundColor      | color  | "#fbfbfb" | change the TextArea's background color    |
-| charCount            | number |     0     | set the current character count           |
-| maxCharLimit         | number |    200    | set the maximum character count limit     |
-| charCountColor       | color  |  "#ccc"   | change character count's color            |
-| exceedCharCountColor | color  |   "red"   | change the exceeded character count color |
+| Property             |  Type  |    Default     | Description                               |
+| -------------------- | :----: | :------------: | ----------------------------------------- |
+| styles               | style  | check the code | set your own style                        |
+| backgroundColor      | color  |   "#fbfbfb"    | change the TextArea's background color    |
+| charCount            | number |       0        | set the current character count           |
+| maxCharLimit         | number |      200       | set the maximum character count limit     |
+| charCountColor       | color  |     "#ccc"     | change character count's color            |
+| exceedCharCountColor | color  |     "red"      | change the exceeded character count color |
 
 ## Author
 
