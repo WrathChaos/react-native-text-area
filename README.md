@@ -6,7 +6,7 @@ Simple and easy to use TextArea for React Native.
 [![npm](https://img.shields.io/npm/dt/react-native-text-area.svg)](https://www.npmjs.com/package/react-native-text-area)
 ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Greenkeeper badge](https://badges.greenkeeper.io/WrathChaos/react-native-text-area.svg)](https://greenkeeper.io/)
 
 <p align="center">
 <img alt="React Native Text Area" src="https://github.com/WrathChaos/react-native-text-area/blob/master/assets/Screenshots/React-Native-text-area.gif" width="49.7%" />
