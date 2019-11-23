@@ -9,9 +9,8 @@ Simple and easy to use TextArea for React Native.
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 <p align="center">
-<img alt="React Native Text Area" src="https://github.com/WrathChaos/react-native-text-area/blob/master/assets/Screenshots/React-Native-text-area.gif" width="49.7%" />
+<img alt="React Native Text Area" src="assets/Screenshots/example.gif" width="49.7%" />
 </p>
-
 
 ## Installation
 
@@ -42,11 +41,11 @@ import TextArea from "react-native-text-area";
   placeholderTextColor="black"
   exceedCharCountColor="#990606"
   placeholder={"Write your review..."}
-/>
+/>;
 ```
 
 ## Configuration - Props
- 
+
 | Property             |  Type  |    Default     | Description                               |
 | -------------------- | :----: | :------------: | ----------------------------------------- |
 | styles               | style  | check the code | set your own style                        |
