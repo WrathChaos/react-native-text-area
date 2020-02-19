@@ -54,6 +54,7 @@ import TextArea from "react-native-text-area";
 | maxCharLimit         | number |      200       | set the maximum character count limit     |
 | charCountColor       | color  |     "#ccc"     | change character count's color            |
 | exceedCharCountColor | color  |     "red"      | change the exceeded character count color |
+| defaultCharCount     | number |       0        | set the default char count other than 0   |
 
 ## Author
 
