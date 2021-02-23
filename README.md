@@ -16,7 +16,7 @@
 
 Add the dependency:
 
-### React Native:
+### React Native
 
 ```js
 npm i @freakycoder/react-native-text-area
@@ -24,19 +24,16 @@ npm i @freakycoder/react-native-text-area
 
 ## Peer Dependencies
 
-###### IMPORTANT! You need install them.
+###### IMPORTANT! You need install them
 
-```js
-"react": ">= 16.x.x",
-"react-native": ">= 0.55.x",
-```
+<i>Zero Dependency</i>
 
 ## Basic Usage
 
-```js
-import TextArea from "react-native-text-area";
+```jsx
+import RNTextArea from "react-native-text-area";
 
-<TextArea
+<RNTextArea
   maxCharLimit={50}
   placeholderTextColor="black"
   exceedCharCountColor="#990606"
@@ -46,15 +43,14 @@ import TextArea from "react-native-text-area";
 
 ## Configuration - Props
 
-| Property             |  Type  |    Default     | Description                               |
-| -------------------- | :----: | :------------: | ----------------------------------------- |
-| styles               | style  | check the code | set your own style                        |
-| backgroundColor      | color  |   "#fbfbfb"    | change the TextArea's background color    |
-| charCount            | number |       0        | set the current character count           |
-| maxCharLimit         | number |      200       | set the maximum character count limit     |
-| charCountColor       | color  |     "#ccc"     | change character count's color            |
-| exceedCharCountColor | color  |     "red"      | change the exceeded character count color |
-| defaultCharCount     | number |       0        | set the default char count other than 0   |
+| Property             |  Type  | Default | Description                               |
+| -------------------- | :----: | :-----: | ----------------------------------------- |
+| style                | style  | default | set your own style                        |
+| charCount            | number |    0    | set the current character count           |
+| maxCharLimit         | number |   200   | set the maximum character count limit     |
+| charCountColor       | color  | "#ccc"  | change character count's color            |
+| exceedCharCountColor | color  |  "red"  | change the exceeded character count color |
+| defaultCharCount     | number |    0    | set the default char count other than 0   |
 
 ## Author
 

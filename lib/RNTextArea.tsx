@@ -26,9 +26,9 @@ interface IRNTextInputProps extends TextInputProps {
 const RNTextInput: React.FC<IRNTextInputProps> = ({
   style,
   maxCharLimit = 200,
-  defaultCharCount,
-  charCountColor,
-  exceedCharCountColor,
+  defaultCharCount = 0,
+  charCountColor = "#ccc",
+  exceedCharCountColor = "red",
   onChangeText,
   ...rest
 }) => {
