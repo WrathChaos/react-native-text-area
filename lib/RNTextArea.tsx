@@ -6,6 +6,7 @@ import {
   TextInputProps,
   StyleProp,
   ViewStyle,
+  TextStyle,
 } from "react-native";
 /**
  * ? Local Imports
@@ -13,9 +14,11 @@ import {
 import styles, { _charCountStyle } from "./RNTextArea.style";
 
 type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
+type CustomTextStyleProp = StyleProp<TextStyle> | Array<StyleProp<TextStyle>>;
 
 interface IRNTextInputProps extends TextInputProps {
   style?: CustomStyleProp;
+  textInputStyle?: CustomTextStyleProp;
   defaultCharCount?: number;
   maxCharLimit?: number;
   charCountColor?: string;
@@ -25,6 +28,7 @@ interface IRNTextInputProps extends TextInputProps {
 
 const RNTextInput: React.FC<IRNTextInputProps> = ({
   style,
+  textInputStyle,
   maxCharLimit = 200,
   defaultCharCount = 0,
   charCountColor = "#ccc",
@@ -56,7 +60,7 @@ const RNTextInput: React.FC<IRNTextInputProps> = ({
       <TextInput
         multiline
         {...rest}
-        style={styles.textInputStyle}
+        style={[styles.textInputStyle, textInputStyle]}
         onChangeText={handleChangeText}
       />
       {renderCharCount()}

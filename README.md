@@ -38,6 +38,7 @@ import RNTextArea from "react-native-text-area";
   placeholderTextColor="black"
   exceedCharCountColor="#990606"
   placeholder={"Write your review..."}
+  onChangeText={(text: string) => console.log("Text: ", text)}
 />;
 ```
 
