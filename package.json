@@ -1,6 +1,6 @@
 {
   "name": "@freakycoder/react-native-text-area",
-  "version": "0.0.12",
+  "version": "0.1.0",
   "description": "Simple and easy to use TextArea for React Native",
   "keywords": [
     "ios",
@@ -22,7 +22,7 @@
   ],
   "homepage": "https://www.freakycoder.com",
   "bugs": "https://github.com/WrathChaos/react-native-text-area/issues",
-  "main": "./lib/src/TextArea.js",
+  "main": "./build/dist/RNTextArea.js",
   "repository": "git@github.com:WrathChaos/react-native-text-area.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
