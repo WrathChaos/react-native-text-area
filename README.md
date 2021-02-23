@@ -31,7 +31,7 @@ npm i @freakycoder/react-native-text-area
 ## Basic Usage
 
 ```jsx
-import RNTextArea from "react-native-text-area";
+import RNTextArea from "@freakycoder/react-native-text-area";
 
 <RNTextArea
   maxCharLimit={50}
