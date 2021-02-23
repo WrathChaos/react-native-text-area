@@ -701,6 +701,11 @@
     "exec-sh" "^0.3.2"
     "minimist" "^1.2.0"
 
+"@freakycoder/react-native-text-area@^0.1.0":
+  "integrity" "sha512-J7ditWtH5RKL54Nf4xw/9DhbdD8C6y/xBFuLc4w6ef3KOAnoD5GZuZG4kieYo25+HG3QwrelWe879WaflfkqWg=="
+  "resolved" "https://registry.npmjs.org/@freakycoder/react-native-text-area/-/react-native-text-area-0.1.0.tgz"
+  "version" "0.1.0"
+
 "@hapi/address@2.x.x":
   "integrity" "sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ=="
   "resolved" "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz"
