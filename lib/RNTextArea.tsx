@@ -16,7 +16,7 @@ import styles, { _charCountStyle } from "./RNTextArea.style";
 type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
 type CustomTextStyleProp = StyleProp<TextStyle> | Array<StyleProp<TextStyle>>;
 
-interface IRNTextInputProps extends TextInputProps {
+export interface IRNTextAreaProps extends TextInputProps {
   style?: CustomStyleProp;
   textInputStyle?: CustomTextStyleProp;
   defaultCharCount?: number;
@@ -26,7 +26,7 @@ interface IRNTextInputProps extends TextInputProps {
   onChangeText: (text: string) => void;
 }
 
-const RNTextInput: React.FC<IRNTextInputProps> = ({
+const RNTextArea: React.FC<IRNTextAreaProps> = ({
   style,
   textInputStyle,
   maxCharLimit = 200,
@@ -68,4 +68,4 @@ const RNTextInput: React.FC<IRNTextInputProps> = ({
   );
 };
 
-export default RNTextInput;
+export default RNTextArea;
