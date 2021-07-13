@@ -19,6 +19,7 @@ type CustomTextStyleProp = StyleProp<TextStyle> | Array<StyleProp<TextStyle>>;
 export interface IRNTextAreaProps extends TextInputProps {
   style?: CustomStyleProp;
   textInputStyle?: CustomTextStyleProp;
+  maxCharTextStyle?: CustomTextStyleProp;
   defaultCharCount?: number;
   maxCharLimit?: number;
   charCountColor?: string;
@@ -34,6 +35,7 @@ const RNTextArea: React.FC<IRNTextAreaProps> = ({
   charCountColor = "#ccc",
   exceedCharCountColor = "red",
   onChangeText,
+  maxCharTextStyle,
   ...rest
 }) => {
   const [charCount, setCharCount] = React.useState(defaultCharCount || 0);
@@ -48,9 +50,12 @@ const RNTextArea: React.FC<IRNTextAreaProps> = ({
 
     return (
       <Text
-        style={_charCountStyle(
-          charCount > maxCharLimit ? exceedCharCountColor : charCountColor,
-        )}
+        style={[
+          _charCountStyle(
+            charCount > maxCharLimit ? exceedCharCountColor : charCountColor,
+          ),
+          maxCharTextStyle,
+        ]}
       >{`${charCount}/${maxCharLimit}`}</Text>
     );
   };
