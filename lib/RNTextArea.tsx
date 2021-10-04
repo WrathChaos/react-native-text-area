@@ -17,6 +17,7 @@ type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
 type CustomTextStyleProp = StyleProp<TextStyle> | Array<StyleProp<TextStyle>>;
 
 export interface IRNTextAreaProps extends TextInputProps {
+  inputRef?: any;
   style?: CustomStyleProp;
   textInputStyle?: CustomTextStyleProp;
   maxCharTextStyle?: CustomTextStyleProp;
@@ -30,6 +31,7 @@ export interface IRNTextAreaProps extends TextInputProps {
 const RNTextArea: React.FC<IRNTextAreaProps> = ({
   style,
   textInputStyle,
+  inputRef,
   maxCharLimit = 200,
   defaultCharCount = 0,
   charCountColor = "#ccc",
@@ -50,6 +52,7 @@ const RNTextArea: React.FC<IRNTextAreaProps> = ({
 
     return (
       <Text
+        ref={inputRef}
         style={[
           _charCountStyle(
             charCount > maxCharLimit ? exceedCharCountColor : charCountColor,
