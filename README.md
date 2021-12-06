@@ -63,6 +63,7 @@ should work of the example project.
 | charCountColor       | color  | "#ccc"  | change character count's color            |
 | exceedCharCountColor | color  |  "red"  | change the exceeded character count color |
 | defaultCharCount     | number |    0    | set the default char count other than 0   |
+| inputRef             |  ref   | default | set the input reference                   |
 
 ## Author
 
